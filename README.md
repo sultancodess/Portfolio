@@ -19,7 +19,7 @@ This is a personal portfolio website built with **React.js**. It features a clea
 
 ## Demo
 *(Add a live demo link or screenshot here)*  
-![Screenshot](screenshot.png)
+![Screenshot](Portfolio\src\Screenshot 2025-01-03 011955.png)
 
 ## Installation and Setup
 
