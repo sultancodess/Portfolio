@@ -17,9 +17,6 @@ This is a personal portfolio website built with **React.js**. It features a clea
 - **Tailwind CSS**: For responsive and modern styling.
 - **Framer Motion**: For smooth animations and transitions.
 
-## Demo
-*(Add a live demo link or screenshot here)*  
-![Screenshot](Portfolio\src\Screenshot 2025-01-03 011955.jpg)
 
 ## Installation and Setup
 
