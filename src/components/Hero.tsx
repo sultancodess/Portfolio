@@ -68,7 +68,7 @@ const Hero = () => {
             >
               <div className="absolute inset-0 bg-indigo-600 rounded-full blur-lg opacity-20"></div>
               <img
-                src="src\components\myphoto.jpg" // Update to correct image path
+                src="Portfolio\public\myphoto.jpg" // Update to correct image path
                 alt="Sultan Alam"
                 className="w-[420px] h-[420px] object-cover rounded-full border-4 border-white shadow-xl relative z-10"
               />

@@ -7,9 +7,13 @@ const Skills = () => {
       title: 'Frontend Development',
       icon: <Layout className="h-6 w-6" />,
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'TypeScript', level: 85 },
+        { name: 'HTML5 & CSS3', level: 95 },
         { name: 'Tailwind CSS', level: 90 },
+        { name: 'JavaScript (ES6+)', level: 90 },
+        { name: 'React', level: 90 },
+        { name: 'Redux', level: 80 },
+        { name: 'TypeScript', level: 85 },
+     
       ],
     },
     {
@@ -18,15 +22,21 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', level: 80 },
         { name: 'Express', level: 75 },
-        { name: 'MongoDB', level: 70 },
+        { name: 'MongoDB', level: 80 },
+        { name: 'Mysql', level: 70 },
+        { name: 'REST APIs', level: 85 },
       ],
     },
+
     {
-      title: 'Mobile Development',
-      icon: <Smartphone className="h-6 w-6" />,
+      title: 'DevOps & Tools',
+      icon: <Terminal className="h-6 w-6" />,
       skills: [
-        { name: 'React Native', level: 75 },
-        { name: 'Flutter', level: 65 },
+        { name: 'Git & GitHub', level: 90 },
+        { name: 'Docker', level: 70 },
+        { name: 'CI/CD', level: 75 },
+        { name: 'Google Cloud Storage (GCS)', level: 60 },
+        { name: 'Figma', level: 60 },
       ],
     },
   ];

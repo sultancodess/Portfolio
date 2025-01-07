@@ -17,10 +17,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        'service_869bbnq',
-        'template_ofnyj2u',
+        'service_tsmdecr', // Use your service ID here
+        'template_3rhyrfn', // Use your template ID here
         form.current,
-        'IZBzaFUvKnCXSEQSB'
+        'ytXXsOZBgRQ4GbROE' // Use your public key here
       );
       setSubmitStatus('success');
       form.current.reset();
@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-indigo-600 mr-2" />
-                  <span>contact@sultanalam.dev</span>
+                  <span>sultancodess@gmail.com</span>
                 </div>
               </div>
             </motion.div>
