@@ -24,5 +24,5 @@ This is a personal portfolio website built with **React.js**. It features a clea
    ```bash
    git clone https://github.com/sultancodess/Portfolio.git
 
-   # npm install 
+ 
 # npm run dev
