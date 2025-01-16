@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This is a personal portfolio website built with **React.js**. It features a clean, responsive design and showcases sections like About Me, Skills, Projects, and Contact, with reusable components for easy customization.
+This is a personal portfolio website built with **React.js and type script**. It features a clean, responsive design and showcases sections like About Me, Skills, Projects, and Contact, with reusable components for easy customization.
 
 ## Features
 - **Header**: A responsive navigation menu for seamless site navigation.
