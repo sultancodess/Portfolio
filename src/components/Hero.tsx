@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Instagram,} from 'lucide-react';
-
+import { Github, Linkedin, Instagram, ArrowRight, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const socialLinks = [
@@ -49,8 +48,15 @@ const Hero = () => {
   };
 
   return (
-    <section id="about" className="pt-24 pb-16 min-h-screen flex items-center bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      </div>
+
+      <div className="container mx-auto px-4 z-10">
         <motion.div 
           className="flex flex-col md:flex-row items-center gap-12"
           variants={containerVariants}
@@ -62,15 +68,15 @@ const Hero = () => {
             variants={itemVariants}
           >
             <motion.div
-              className="relative"
+              className="relative group"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="absolute inset-0 bg-indigo-600 rounded-full blur-lg opacity-20"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="src\images\myphoto.jpg" // Update to correct image path
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
                 alt="Sultan Alam"
-                className="w-[420px] h-[420px] object-cover rounded-full border-4 border-white shadow-xl relative z-10"
+                className="relative w-[320px] h-[320px] md:w-[420px] md:h-[420px] object-cover rounded-full border-4 border-white shadow-xl"
               />
             </motion.div>
           </motion.div>
@@ -79,44 +85,69 @@ const Hero = () => {
             className="w-full md:w-1/2 text-center md:text-left"
             variants={containerVariants}
           >
-            <motion.div variants={itemVariants}>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                Hi👋, I'm Sultan Alam 👨‍💻
+            <motion.div 
+              variants={itemVariants}
+              className="space-y-6"
+            >
+              <div className="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
+                <Sparkles className="w-4 h-4 mr-2" />
+                Available for new projects
+              </div>
+              
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                Hi👋, I'm Sultan Alam
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                  Software Developer
+                </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              
+              <p className="text-xl text-gray-600">
                 A passionate software developer 💻 dedicated to building innovative and user-friendly web applications 🌐 that solve real-world problems 🚀.
               </p>
             </motion.div>
-            <motion.div
-              className="mt-8"
-              variants={itemVariants}
-            >
-              <a
-                href="/resume" // Change this to your actual resume URL or download link
-                className="inline-block px-6 py-2 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-300"
-              >
-                Resume
-              </a>
-            </motion.div>
 
-            <motion.div 
-              className="flex space-x-4 justify-center md:justify-start mb-8 py-8"
+            <motion.div
+              className="mt-8 space-y-6"
               variants={itemVariants}
             >
-              {socialLinks.map((link) => (
-                <motion.a
-                  key={link.label}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all"
-                  whileHover={{ scale: 1.3, backgroundColor: " green" }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label={link.label}  // Added for accessibility
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/resume"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition duration-300"
                 >
-                  {link.icon}
-                </motion.a>
-              ))}
+                  View Resume
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:shadow-lg border border-gray-200 transform hover:-translate-y-0.5 transition duration-300"
+                >
+                  Contact Me
+                </a>
+              </div>
+
+              <motion.div 
+                className="flex space-x-4 justify-center md:justify-start"
+                variants={itemVariants}
+              >
+                {socialLinks.map((link) => (
+                  <motion.a
+                    key={link.label}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all border border-gray-100"
+                    whileHover={{ 
+                      scale: 1.2,
+                      backgroundColor: "#F3F4F6",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    aria-label={link.label}
+                  >
+                    {link.icon}
+                  </motion.a>
+                ))}
+              </motion.div>
             </motion.div>
           </motion.div>
         </motion.div>
