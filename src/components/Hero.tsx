@@ -7,7 +7,7 @@ const Hero = () => {
     {
       icon: <Github className="h-6 w-6" />,
       url: 'https://github.com/Shekhsultan',
-      label: 'GitHub',import React from 'react';
+      label: 'GitHub',
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter, ArrowRight, Sparkles, ExternalLink } from 'lucide-react';
 
