@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Instagram, ArrowRight, Sparkles, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowRight, Sparkles, ExternalLink } from 'lucide-react';
+import { SiLeetcode } from 'react-icons/si';
 
 const Hero = () => {
   const socialLinks = [
@@ -23,10 +24,10 @@ const Hero = () => {
       color: 'hover:text-sky-500',
     },
     {
-      icon: <Instagram className="h-6 w-6" />,
-      url: 'https://www.instagram.com/sultan.codes/',
-      label: 'Instagram',
-      color: 'hover:text-pink-500',
+      icon: <SiLeetcode className="h-6 w-6" />,
+      url: 'https://leetcode.com/SultanAlam/',
+      label: 'LeetCode',
+      color: 'hover:text-orange-500',
     },
   ];
 

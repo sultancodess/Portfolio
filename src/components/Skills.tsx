@@ -14,7 +14,6 @@ const Skills = () => {
         { name: 'JavaScript (ES6+)', level: 90, icon: <Braces className="h-4 w-4" /> },
         { name: 'React', level: 90, icon: <Globe className="h-4 w-4" /> },
         { name: 'Redux', level: 80, icon: <Layout className="h-4 w-4" /> },
-        { name: 'TypeScript', level: 85, icon: <Code2 className="h-4 w-4" /> },
       ],
     },
     {
@@ -30,15 +29,15 @@ const Skills = () => {
       ],
     },
     {
-      title: 'DevOps & Tools',
+      title: 'Languages & Tools',
       icon: <Terminal className="h-6 w-6" />,
       color: 'from-amber-500 to-orange-500',
       skills: [
         { name: 'Git & GitHub', level: 90, icon: <GitBranch className="h-4 w-4" /> },
-        { name: 'Docker', level: 70, icon: <Cloud className="h-4 w-4" /> },
-        { name: 'CI/CD', level: 75, icon: <Terminal className="h-4 w-4" /> },
-        { name: 'Google Cloud', level: 60, icon: <Cloud className="h-4 w-4" /> },
+        { name: 'Postman', level: 80, icon: <Smartphone className="h-4 w-4" /> },
         { name: 'Figma', level: 60, icon: <Palette className="h-4 w-4" /> },
+        { name: 'Docker', level: 70, icon: <Server className="h-4 w-4" /> },
+        { name: 'Kubernetes', level: 60, icon: <Cloud className="h-4 w-4" /> },
       ],
     },
   ];
