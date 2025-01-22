@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
-import AboutMe from './components/AboutMe';
 import Hero from './components/Hero';
-import Services from './components/services/Services';
 import Skills from './components/Skills';
+import Services from './components/services/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -14,7 +13,6 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <AboutMe />
         <Skills />
         <Projects />
         <Services />

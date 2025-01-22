@@ -106,7 +106,7 @@ const Hero = () => {
                 transition={{ duration: 8, repeat: Infinity, repeatType: 'reverse' }}
               />
               <img
-                src="https://via.placeholder.com/380"
+                src="/images/myphoto.jpg"
                 alt="Sultan Alam"
                 className="relative w-[280px] h-[280px] md:w-[380px] md:h-[380px] object-cover rounded-full border-4 border-white shadow-xl"
               />
