@@ -29,7 +29,7 @@ const Skills = () => {
       ],
     },
     {
-      title: 'Languages & Tools',
+      title: 'Tools',
       icon: <Terminal className="h-6 w-6" />,
       color: 'from-amber-500 to-orange-500',
       skills: [
