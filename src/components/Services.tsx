@@ -1,27 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Globe, Smartphone, Server } from 'lucide-react';
+import { Code, Globe } from 'lucide-react';
 
 const services = [
   {
     icon: <Code className="h-8 w-8" />,
     title: 'Web Development',
-    description: 'Creating responsive and modern web applications using React, Next.js, and other cutting-edge technologies.',
+    description: 'Creating responsive and modern web applications using React and modern web frameworks.',
   },
   {
     icon: <Globe className="h-8 w-8" />,
     title: 'Frontend Development',
-    description: 'Building beautiful user interfaces with modern frameworks and ensuring great user experience.',
+    description: 'Building beautiful user interfaces and ensuring exceptional user experiences.',
   },
   {
-    icon: <Server className="h-8 w-8" />,
-    title: 'Backend Development',
-    description: 'Developing robust server-side applications using Node.js, Express, and MongoDB.',
+    icon: <Code className="h-8 w-8" />,
+    title: 'UI/UX Design',
+    description: 'Crafting intuitive and visually appealing user interfaces for web applications.',
   },
   {
-    icon: <Smartphone className="h-8 w-8" />,
-    title: 'Mobile Development',
-    description: 'Creating cross-platform mobile applications using React Native and Flutter.',
+    icon: <Globe className="h-8 w-8" />,
+    title: 'Performance Optimization',
+    description: 'Improving website speed and responsiveness for a seamless user experience.',
   },
 ];
 

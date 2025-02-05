@@ -182,20 +182,7 @@ const Services = () => {
       color: 'from-purple-500 to-pink-500',
       features: ['Modern UI/UX', 'Interactive Interfaces', 'Cross-browser Compatibility', 'Animation Integration'],
     },
-    {
-      icon: <Server className="h-8 w-8" />,
-      title: 'Backend Development',
-      description: 'Developing robust server-side applications using Node.js, Express, and MongoDB.',
-      color: 'from-green-500 to-emerald-500',
-      features: ['API Development', 'Database Design', 'Server Management', 'Security Implementation'],
-    },
-    {
-      icon: <Smartphone className="h-8 w-8" />,
-      title: 'Mobile Development',
-      description: 'Creating cross-platform mobile applications using React Native and Flutter.',
-      color: 'from-orange-500 to-yellow-500',
-      features: ['Cross-platform Apps', 'Native Features', 'App Store Deployment', 'Performance Optimization'],
-    },
+   
   ];
 
   return (

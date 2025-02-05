@@ -17,7 +17,7 @@ const Skills = () => {
       ],
     },
     {
-      title: 'Backend Development',
+      title: 'Backend Development(Ongoing)',
       icon: <Server className="h-6 w-6" />,
       color: 'from-purple-500 to-pink-500',
       skills: [
