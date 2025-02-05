@@ -157,7 +157,7 @@ const Hero = () => {
             >
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
-                  href="/resume"
+                  href="./images/Front_end_developer (2).pdf"
                   className="group inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
