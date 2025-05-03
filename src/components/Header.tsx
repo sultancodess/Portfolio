@@ -12,7 +12,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 pr-4">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">

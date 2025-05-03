@@ -7,7 +7,7 @@ const Hero = () => {
   const socialLinks = [
     {
       icon: <Github className="h-6 w-6" />,
-      url: 'https://github.com/Shekhsultan',
+      url: 'https://github.com/sultancodess',
       label: 'GitHub',
       color: 'hover:text-gray-900',
     },
@@ -25,7 +25,7 @@ const Hero = () => {
     },
     {
       icon: <SiLeetcode className="h-6 w-6" />,
-      url: 'https://leetcode.com/SultanAlam/',
+      url: 'https://leetcode.com/u/sultancodess/',
       label: 'LeetCode',
       color: 'hover:text-orange-500',
     },
@@ -157,7 +157,7 @@ const Hero = () => {
             >
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
-                  href="./images/Front_end_developer.pdf"
+                  href="./images/Sultan Alam.pdf"
                   className="group inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-lg"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}

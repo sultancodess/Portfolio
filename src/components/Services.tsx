@@ -1,58 +1,107 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Globe } from 'lucide-react';
-
-const services = [
-  {
-    icon: <Code className="h-8 w-8" />,
-    title: 'Web Development',
-    description: 'Creating responsive and modern web applications using React and modern web frameworks.',
-  },
-  {
-    icon: <Globe className="h-8 w-8" />,
-    title: 'Frontend Development',
-    description: 'Building beautiful user interfaces and ensuring exceptional user experiences.',
-  },
-  {
-    icon: <Code className="h-8 w-8" />,
-    title: 'UI/UX Design',
-    description: 'Crafting intuitive and visually appealing user interfaces for web applications.',
-  },
-  {
-    icon: <Globe className="h-8 w-8" />,
-    title: 'Performance Optimization',
-    description: 'Improving website speed and responsiveness for a seamless user experience.',
-  },
-];
+import { Code, Server, Layout, Rocket, CheckCircle2 } from 'lucide-react';
 
 const Services = () => {
+  const services = [
+    {
+      icon: <Code className="h-6 w-6 text-blue-600" />,
+      title: 'Frontend Development',
+      features: [
+        'React.js',
+        'Tailwind CSS',
+        'Responsive Web Design',
+        'State Management (Redux)',
+        'API Integration',
+      ],
+      color: 'from-blue-100 to-blue-50',
+    },
+    {
+      icon: <Server className="h-6 w-6 text-indigo-600" />,
+      title: 'Backend Development',
+      features: [
+        'Node.js',
+        'Express.js',
+        'MongoDB/Mongoose',
+        'Authentication (JWT/OAuth)',
+        'RESTful APIs'
+      ],
+      color: 'from-indigo-100 to-indigo-50',
+    },
+    {
+      icon: <Layout className="h-6 w-6 text-teal-600" />,
+      title: 'Full Stack Solutions',
+      features: [
+        'MERN Stack Development',
+        'Responsive Web Design',
+        'Frontend Development',
+        'Backend Development',
+        'API Integration',
+        'Database Design',
+      ],
+      color: 'from-teal-100 to-teal-50',
+    },
+  ];
+
   return (
-    <section id="services" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <motion.h2 
-          className="text-3xl font-bold text-center mb-12"
+    <section id="services" className="py-20 bg-white relative overflow-hidden">
+      <div className="container mx-auto px-4 relative">
+        <motion.div 
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
         >
-          Services I Offer
-        </motion.h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            Development Expertise
+          </h2>
+          <p className="text-gray-600">End-to-end digital solutions with modern technologies</p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
-              initial={{ opacity: 0, y: 20 }}
+              className="w-full group"
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              transition={{ delay: index * 0.2, type: 'spring' }}
             >
-              <div className="flex flex-col items-center text-center">
-                <div className="p-3 bg-indigo-100 rounded-full mb-4">
-                  {service.icon}
+              <div className="relative bg-white rounded-2xl p-6 h-full border border-gray-200 hover:border-blue-200 transition-all group-hover:shadow-lg">
+                <div className={`mb-4 w-fit p-3 rounded-lg bg-gradient-to-br ${service.color}`}>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: 'spring' }}
+                  >
+                    {service.icon}
+                  </motion.div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h3>
+                <ul className="space-y-2">
+                  {service.features.map((feature, i) => (
+                    <motion.li 
+                      key={feature}
+                      className="flex items-center text-gray-600 text-sm"
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.2 + i * 0.05 }}
+                    >
+                      <CheckCircle2 className="h-4 w-4 mr-2 text-blue-500 flex-shrink-0" />
+                      {feature}
+                    </motion.li>
+                  ))}
+                </ul>
+                <div className="mt-4 pt-4 border-t border-gray-100">
+                  <motion.button 
+                    className="text-xs font-medium text-blue-600 hover:text-blue-700 flex items-center"
+                    whileHover={{ x: 5 }}
+                  >
+                    <span>View Details</span>
+                    <Rocket className="h-3 w-3 ml-2" />
+                  </motion.button>
+                </div>
               </div>
             </motion.div>
           ))}
